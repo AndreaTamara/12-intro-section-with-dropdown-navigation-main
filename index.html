@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  
+</head>
+<body >
+<header>
+  <div id="header_left">
+    <img src="/images/logo.svg"/>
+    
+    <nav id="nav_barr">
+      <button onclick="hideSideBarr()" id="close_menu"><img src="/images/icon-close-menu.svg" alt="close"/></button>
+      <ul id="main_menu">
+        <li><div><span onclick="optionSelected (1)" ><a href="#">Features </a><svg id="arrow_features" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></span> 
+          <ul id="features_submenu" class="submenu">
+            <li>
+              <img src="/images/icon-todo.svg"/>
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="/images/icon-calendar.svg"/>
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img src="/images/icon-reminders.svg"/>
+              <a href="#">Reminders</a>
+            </li>
+            <li>
+              <img src="/images/icon-planning.svg"/>
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </div>
+        </li>
+        <li><div><span onclick="optionSelected (2)"><a href="#">Company</a><svg id="arrow_company" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></span>
+          <ul id="company_submenu"class="submenu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  
+  </div>
+  <div id="header_right">
+    <button id="login">Login</button>
+    <button id="register">Register</button>
+    <button onclick="displaySideBarr()"  id="btn_menu"><img src="/images/icon-menu.svg" alt="menu"/></button>
+  </div>
+</header>
+<main>
+  <section id="info">
+    <h1>Make remote work</h1>
+    <p> Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+    <button id="learn" >Learn more</button>  
+    <footer>
+      <img src="/images/client-databiz.svg" alt="client icon"/>
+      <img src="/images/client-audiophile.svg" alt="client icon"/>
+      <img src="/images/client-meet.svg" alt="client icon"/>
+      <img src="/images/client-maker.svg" alt="client icon"/>
+    </footer>
+  </section>
+  <section id="hero">
+    <img id="hDesktop" src="/images/image-hero-desktop.png" alt="hero"/>
+    <img id="hMobile"src="/images/image-hero-mobile.png" alt="hero"/>
+  </section>
+</main>
+
+  <script src="/script/main.js" type="text/javascript"></script>
+</body>
+</html>
